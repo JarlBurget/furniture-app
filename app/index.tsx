@@ -4,7 +4,7 @@ import Splash from './(tabs)/Splash/index'
 
 export default function index () {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{ flex: 1, backgroundColor: '#fff' }}>
       <Splash/>
     </SafeAreaView>
   )
