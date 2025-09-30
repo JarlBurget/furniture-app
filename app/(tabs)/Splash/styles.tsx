@@ -1,5 +1,7 @@
 import { StyleSheet } from "react-native";
 
+import { colors } from "@/app/utils/colors";
+
 export const styles = StyleSheet.create({
   image: {
     width: '100%',
@@ -11,7 +13,7 @@ export const styles = StyleSheet.create({
     textAlign: 'center',
   },
   innerTitle: {
-    color: '#FCA34D',
+    color: colors.orange,
     textDecorationLine: 'underline'
   },
   container: {
@@ -20,7 +22,7 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     height: '100%',
-    backgroundColor: '#fff'
+    backgroundColor: colors.white
   },
   titlecontainer: {
     marginVertical: 54,
