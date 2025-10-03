@@ -20,4 +20,7 @@ export const styles = StyleSheet.create({
   agreeTextBold: {
     fontWeight: 'bold',
   },
+  button: {
+    marginVertical: 20,
+  },
 });
