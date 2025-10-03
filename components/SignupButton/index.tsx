@@ -7,18 +7,21 @@ type ButtonProps = {
   title: string;
 };
 
-const Button = ({ title }: ButtonProps) => {
+const SignupButton = ({ title }: ButtonProps) => {
   const handlePress = () => {
-    console.warn('You pressed the button!')
-  }
+    console.warn('You pressed the signup button!');
+  };
 
   return (
-    <Pressable style={styles.container} onPress={handlePress}>
+    <Pressable
+      style={({ pressed }) => [
+        styles.container,
+      ]}
+      onPress={handlePress}
+    >
       <Text style={styles.title}>{title}</Text>
     </Pressable>
-  )
-}
+  );
+};
 
-
-
-export default Button
+export default SignupButton;

@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
         paddingHorizontal: 8,
         borderRadius: 8,
         width: '100%',
-        marginTop: 60
+        marginTop: 60,
     },
     title: {
         color: colors.white,
