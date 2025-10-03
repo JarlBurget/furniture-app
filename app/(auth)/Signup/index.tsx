@@ -1,6 +1,7 @@
 import AuthHeader from "@/components/AuthHeader";
 import Checkbox from "@/components/Checkbox";
 import Input from "@/components/Input";
+import Separator from "@/components/Separator";
 import SignupButton from "@/components/SignupButton";
 import React, { useState } from "react";
 import { Text, View } from "react-native";
@@ -18,10 +19,11 @@ const Signup = () => {
       <Input label="Email" placeholder="mart@example.com" />
       <Input label="Password" placeholder="********" isPassword />
       <View style={styles.agreeRow}>
-              <Checkbox checked={checked} onCheck={setChecked} />
-              <Text style={styles.agreeText}>I agree with <Text style={styles.agreeTextBold}>Terms & Conditions</Text></Text>
+        <Checkbox checked={checked} onCheck={setChecked} />
+        <Text style={styles.agreeText}>I agree with <Text style={styles.agreeTextBold}>Terms & Conditions</Text></Text>
       </View>
-      <SignupButton title="Sign Up" style={styles.button} />
+      <SignupButton title="Sign Up" />
+      <Separator text="Or sign up with" />
     </View>
   );
 }
