@@ -7,28 +7,14 @@ export const styles = StyleSheet.create({
     flex: 1,
     paddingHorizontal: 24,
     paddingTop: 40,
-    backgroundColor: '#fff',  
-  },
-  agreeRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-  agreeText: {
-    marginHorizontal: 14,
-    color: colors.blue,
-  },
-  agreeTextBold: {
-    fontWeight: 'bold',
-  },
-  button: {
-    marginVertical: 20,
+    backgroundColor: "#fff",
   },
   footerText: {
     color: colors.blue,
-    textAlign: 'center',
+    textAlign: "center",
     marginBottom: 56,
   },
   footerLink: {
-    fontWeight: 'bold',
+    fontWeight: "bold",
   },
 });

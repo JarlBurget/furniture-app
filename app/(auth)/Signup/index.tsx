@@ -1,5 +1,6 @@
 import AuthHeader from "@/components/AuthHeader";
 import Checkbox from "@/components/Checkbox";
+import GoogleLogin from "@/components/GoogleLogin";
 import Input from "@/components/Input";
 import Separator from "@/components/Separator";
 import SignupButton from "@/components/SignupButton";
@@ -24,6 +25,10 @@ const Signup = () => {
       </View>
       <SignupButton title="Sign Up" />
       <Separator text="Or sign up with" />
+      <GoogleLogin />
+      <Text style={styles.footerText}>Already have an account?
+        <Text style={styles.footerLink}> Sign In</Text>
+      </Text>
     </View>
   );
 }
